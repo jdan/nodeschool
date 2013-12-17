@@ -1,0 +1,16 @@
+{
+  "name": "nodeschool",
+  "author": "Jordan Scales <scalesjordan@gmail.com>",
+  "description": "my solutions for the challenges at nodeschool.io",
+  "dependencies": {
+    "concat-stream": "1.2.1",
+    "level": "0.18.0",
+    "level-sublevel": "5.2.0",
+    "multilevel": "5.5.0",
+    "split": "0.2.10",
+    "tar": "0.1.18",
+    "through": "2.3.4",
+    "trumpet": "1.6.3",
+    "websocket-stream": "0.3.3"
+  }
+}
