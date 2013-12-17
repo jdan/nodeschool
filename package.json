@@ -4,6 +4,8 @@
   "description": "my solutions for the challenges at nodeschool.io",
   "dependencies": {
     "concat-stream": "1.2.1",
+    "express": "3.4.7",
+    "jade": "0.35.0",
     "level": "0.18.0",
     "level-sublevel": "5.2.0",
     "multilevel": "5.5.0",
