@@ -3,6 +3,8 @@
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
+var psi = require('psi');
+var lt = require('localtunnel');
 var app = express();
 var port = process.env.PORT || 7777;
 
@@ -21,5 +23,18 @@ function home (req, res) {
 }
 
 function insights (req, res) {
-  res.end('Not very insightful!');
+  lt(port, function(err, tunnel) {
+    psi(tunnel.url, function(err, data) {
+      var response = {
+        resources: {
+          css: data.pageStats.numberCssResources,
+          js: data.pageStats.numberJsResources,
+          hosts: data.pageStats.numberHosts,
+          total: data.pageStats.numberResources,
+        },
+      };
+
+      res.json(response);
+    });
+  })
 }

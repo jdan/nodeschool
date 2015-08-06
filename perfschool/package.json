@@ -23,6 +23,8 @@
   "preferGlobal": true,
   "dependencies": {
     "express": "4.12.3",
+    "localtunnel": "^1.7.0",
+    "psi": "^1.0.6",
     "serve-static": "1.9.2"
   },
   "gitHead": "8282c5bee9f70e3907159bbf94aeb589bb0e433b",
